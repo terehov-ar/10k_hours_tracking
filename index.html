@@ -14,7 +14,7 @@
             width: 10%;
         }
 
-        .todoListButton {
+        #todoListButton {
             text-align: left;
         }
     </style>
@@ -22,19 +22,16 @@
 
 <body>
     <p>Insert your tasks:</p>
-    <textarea rows="3" cols="35" name="textInsert">Your text</textarea>
-    <p><button class="todoListButton">Add</button></p>
+    <input type="text" id="textInput">
+    <p><button id="todoListButton">Add</button></p>
     <div class="todoListContainer">
         <h2>Todo:</h2>
-        <ul>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-        </ul>
+        <ul id="listTodo"></ul>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
+
