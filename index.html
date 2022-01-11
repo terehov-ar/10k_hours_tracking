@@ -22,19 +22,15 @@
 
 <body>
     <p>Insert your tasks:</p>
-    <textarea rows="3" cols="35" name="textInsert">Your text</textarea>
-    <p><button class="todoListButton">Add</button></p>
+    <input type="text" id="textInput">
+    <p><button class="todoListButton" id="todoListButton">Add</button></p>
     <div class="todoListContainer">
         <h2>Todo:</h2>
-        <ul>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-        </ul>
+        <ul id="listOfTodos"></ul>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
