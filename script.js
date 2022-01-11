@@ -1,19 +1,21 @@
-const button = document.getElementById('todoListButton');
+const button = document.getElementById("todoListButton");
 
 button.addEventListener("click", () => {
-    let taskInput = document.getElementById('textInput').value;
+    const taskInput = document.getElementById("textInput").value;
+    let listItem;
 
-    if (taskInput === '') {
-        
-    } else {
-        var listItem = document.createElement("li");
-        let text = document.createTextNode(taskInput);
+    if (taskInput === "") {
+        return;
+    }
+    else {
+        listItem = document.createElement("li");
+        const text = document.createTextNode(taskInput);
         listItem.appendChild(text);
     }
-
-
-    let list = document.getElementById("listTodo");
+    if (!listItem) {
+        return;
+    }
+    const list = document.getElementById("listOfTodos");
     list.appendChild(listItem);
 
 });
-
