@@ -11,6 +11,7 @@ button.addEventListener("click", () => {
         listItem = document.createElement("li");
         const text = document.createTextNode(taskInput);
         listItem.appendChild(text);
+        document.querySelectorAll('input').forEach(input => input.value='')
     }
     if (!listItem) {
         return;
